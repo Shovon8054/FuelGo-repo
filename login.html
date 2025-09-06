@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Gas & Fuel Station</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><i class="fas fa-sign-in-alt"></i> Login</h1>
+  </header>
+
+  <!-- Login Container -->
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <img src="https://picsum.photos/400/250?random=10" 
+             alt="Login Image" 
+             onerror="this.src='https://via.placeholder.com/400x250?text=No+Image'; 
+                      this.alt='Image Failed to Load';">
+      </div>
+
+      <div class="card-content">
+        <h2>Access Your Account</h2>
+        <p>Login as Admin, Owner, Manager, or Customer.</p>
+
+        <!-- Login Form -->
+        <form action="login.php" method="POST">
+          <div class="form-group">
+            <label for="email">Email or Phone:</label>
+            <input type="text" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Links -->
+        <p>New user? <a href="customer_registration.php" class="nav-link">Register</a></p>
+        <p>Admin/Owner? <a href="owner_registration.php" class="nav-link">Register Here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> support@gasfuelstation.com</p>
+        <p><i class="fas fa-phone"></i> +880-123-456-789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Gas & Fuel Station. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

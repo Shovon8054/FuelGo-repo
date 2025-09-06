@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Station Dashboard - Example Station</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-gas-pump"></i> Station Dashboard: Example Station</h1>
+  </header>
+
+  <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+
+  <nav class="sidebar">
+    <a href="#"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+    <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </nav>
+
+  <div class="container">
+    <div class="dashboard-grid">
+      
+      <!-- Station Details -->
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=5" alt="Station Details">
+        <h2><i class="fas fa-info-circle"></i> Station Details</h2>
+        <p><strong>ID:</strong> 101</p>
+        <p><strong>Owner:</strong> John Doe</p>
+        <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+        <p><strong>Capacity:</strong> 200</p>
+        <p><strong>Current Customers:</strong> 150</p>
+        <p><strong>Status:</strong> On</p>
+        <p><strong>Fuel Available:</strong> <span class="highlight">Yes</span></p>
+        <p><strong>Gas Available:</strong> <span class="highlight">No</span></p>
+        <p><strong>Octane Available:</strong> <span class="highlight">Yes (120 liters)</span></p>
+        <p><strong>Diesel Available:</strong> <span class="highlight">Yes (300 liters)</span></p>
+        <p><strong>Petrol Available:</strong> <span class="highlight">No (0 liters)</span></p>
+        <p><strong>Cash Amount:</strong> <span class="highlight">50,000 Taka</span></p>
+        <p><strong>Total Sale:</strong> <span class="highlight">1,20,000 Taka</span></p>
+      </div>
+
+      <!-- Food Corner -->
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=6" alt="Food Corner">
+        <h2><i class="fas fa-utensils"></i> Food Corner</h2>
+        <p><strong>Dry Food:</strong> yes</p>
+        <p><strong>Set Menu:</strong> no</p>
+        <p><strong>Drinks:</strong> yes</p>
+        <a href="#" class="btn">Manage Options</a>
+      </div>
+
+      <!-- Customer Reviews -->
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=7" alt="Customer Reviews">
+        <h2><i class="fas fa-star"></i> Customer Reviews</h2>
+        <ul class="review-list">
+          <li>
+            <strong>Rating:</strong> <span class="rating">5/5</span> <i class="fas fa-star"></i><br>
+            <strong>Review:</strong> Excellent service!<br>
+            <strong>Date:</strong> 2025-09-05
+          </li>
+          <li>
+            <strong>Rating:</strong> <span class="rating">4/5</span> <i class="fas fa-star"></i><br>
+            <strong>Review:</strong> Good, but can improve waiting times.<br>
+            <strong>Date:</strong> 2025-09-01
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br> <br> <br>
+    <!-- Owner Update Form -->
+    <div class="card">
+      <!-- <img src="https://picsum.photos/400/250?random=8" alt="Update Station"> -->
+      <h2><i class="fas fa-edit"></i> Update Station</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="station_name">Station Name:</label>
+          <input type="text" name="station_name" placeholder="Station Name" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" name="location" placeholder="Dhaka, Bangladesh" required>
+        </div>
+        <div class="form-group">
+          <label for="capacity">Capacity:</label>
+          <input type="number" name="capacity" placeholder="200 BDT" required>
+        </div>
+        <div class="form-group">
+          <label for="octane_amount">Octane Amount (liters):</label>
+          <input type="number" step="0.01" name="octane_amount" placeholder="120">
+        </div>
+        <div class="form-group">
+          <label for="diesel_amount">Diesel Amount (liters):</label>
+          <input type="number" step="0.01" name="diesel_amount" placeholder="120">
+        </div>
+        <div class="form-group">
+          <label for="petrol_amount">Petrol Amount (liters):</label>
+          <input type="number" step="0.01" name="petrol_amount" placeholder="0">
+        </div>
+        <input type="submit" value="Update" class="btn"> <br> <br>
+        <button type="submit" class="btn" style="background: linear-gradient(to right, #e74c3c, #c0392b);">Delete Station</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact: support@gasfuelstation.com | +880-123-456-789</p>
+    <p>&copy; 2025 Gas & Fuel Station. All rights reserved.</p>
+  </footer>
+</body>
+</html>
